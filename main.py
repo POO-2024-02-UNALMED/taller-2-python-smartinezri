@@ -34,8 +34,8 @@ class Auto:
 
     def cantidadAsientos(self):
         cantidad = 0
-        for i in range(self.asientos.length):
-            if type(self.asientos) is Asiento:
+        for i in self.asientos:
+            if type(i) is Asiento:
                 cantidad += 1
 
     def verificarIntegridad(self):
