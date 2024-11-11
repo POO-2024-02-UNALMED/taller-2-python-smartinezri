@@ -48,7 +48,7 @@ class Auto:
         original = ""
 
         for i in self.asientos:
-            if i != None and i.registro == rAuto:
+            if i and i.registro != self.registro:
                 iguales = False
                 break
 
